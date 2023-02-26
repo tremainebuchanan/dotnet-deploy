@@ -1,0 +1,7 @@
+/Users/captain_kirk/Development/Spendr/bin/Release/net7.0/publish/Spendr
+/Users/captain_kirk/Development/Spendr/bin/Release/net7.0/publish/appsettings.Development.json
+/Users/captain_kirk/Development/Spendr/bin/Release/net7.0/publish/appsettings.json
+/Users/captain_kirk/Development/Spendr/bin/Release/net7.0/publish/Spendr.dll
+/Users/captain_kirk/Development/Spendr/bin/Release/net7.0/publish/Spendr.deps.json
+/Users/captain_kirk/Development/Spendr/bin/Release/net7.0/publish/Spendr.runtimeconfig.json
+/Users/captain_kirk/Development/Spendr/bin/Release/net7.0/publish/Spendr.pdb
