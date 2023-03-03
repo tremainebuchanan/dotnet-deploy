@@ -2,7 +2,43 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="page-container">
+    <div class="box">
+         <div class="level">
+        <div class="level-right"></div>
+        <div class="level-left">
+            <a href="/Home/Create" class="button is-success">Add</a>
+        </div>
+    </div>
+   
+        <h1 class="title is-4">Recent Spending</h1>
+    @foreach (var expense in ViewBag.expenses)
+    {
+         <article class="media">
+        <figure class="media-left">
+          <p class="image is-64x64 is-rounded">
+            <img src="https://bulma.io/images/placeholders/128x128.png">
+          </p>
+        </figure>
+        <div class="media-content">
+          <div class="content">
+            <h1 class="title is-4" style="margin-bottom: 0;margin-top: 5px">@expense.Title</h1>
+            <p>@expense.Category</p>
+          </div>
+
+        </div>
+        <div class="media-right">
+          <h1 class="title is-5" style="margin-bottom: 0;margin-top: 5px">@expense.Amount</h1>
+          <p>@expense.CreatedOn</p>
+        </div>
+      </article>
+    }
+ 
+
+
+    </div>
+   
+   
+    
 </div>
+

@@ -1,0 +1,103 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="page-container">
+    <div class="box">
+         <div class="level">
+        <div class="level-right">
+            <a href="/" class="button is-success">Back</a>
+        </div>
+        <div class="level-left">
+            
+        </div>
+    </div>
+     
+        <h1 class="title is-4">Add Expense</h1>
+        <form action="/Home/Create" method="post">
+                    <div class="field">
+              <label class="label">Title</label>
+              <div class="control">
+                <input class="input" type="text" name="Title">
+              </div>
+          </div>
+
+            <div class="field">
+              <label class="label">Amount</label>
+              <div class="control">
+                <input class="input" type="text" name="Amount">
+              </div>
+          </div>
+
+
+
+
+
+    <div class="field">
+      <label class="label">Category</label>
+      <div class="control">
+        <div class="select">
+          <select name="Category">
+            <option value="">Select Category</option>
+            <option value="Transportation">Transportation</option>
+            <option value="Food">Food</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <div class="field">
+      <label class="label">Location</label>
+      <div class="control">
+        <div class="select">
+          <select name="Location">
+            <option value="">Select Location</option>
+            <option value="NA">Not Applicable</option>
+            <option value="Rubis Naggos Head">Rubis Naggos Head</option>
+            <option value="Rubis Cumberland">Rubis Cumberland</option>
+            <option value="Rubis Half Way Tree Road">Rubis Halfway Tree Road</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <div class="field">
+      <label class="label">Comment</label>
+      <div class="control">
+        <textarea class="textarea" name="Comment"></textarea>
+      </div>
+    </div>
+
+
+    <div class="field">
+        <label class="label">Card Type</label>
+      <div class="control">
+        <label class="radio">
+          <input type="radio" name="CardType" value="Credit" checked>
+          Credit
+        </label>
+        <label class="radio">
+          <input type="radio" name="CardType" value="Debit">
+          Debit
+        </label>
+        
+      </div>
+    </div>
+
+    <div class="field is-grouped">
+      <div class="control">
+        <button class="button is-link" type="submit">Submit</button>
+      </div>
+      <div class="control">
+        <a href="/" class="button is-link is-light">Cancel</a>
+      </div>
+    </div>
+        </form>
+   
+    
+    </div>
+   
+   
+    
+</div>
+
